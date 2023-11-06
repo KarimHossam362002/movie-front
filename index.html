@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/logo.jpg" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@300;500;600;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>MovieNight | Home</title>
+  </head>
+  <body>
+    <div class="nonbs-navbar">
+      <div class="nonbs-navbar-container">
+        <div class="nonbs-logo-container" onclick="home()" style="cursor: pointer;"><h1 class="logo">MovieNight</h1></div>
+        <div class="nonbs-menu-container">
+          <ul class="nonbs-menu-list">
+            <li onclick="home()" class="menu-list-item active">Home</li>
+            <li onclick="movies()" class="menu-list-item">Movies</li>
+            <li onclick="series()" class="menu-list-item">Series</li>
+            <li onclick="popular()" class="menu-list-item">Popular</li>
+            <li onclick="trends()" class="menu-list-item">Trends</li>
+          </ul>
+        </div>
+        <div class="profile-container">
+          <img class="profile-picture" src="img/profile.jpg" alt="" />
+          <div class="profile-text-container">
+            <span class="profile-text" onclick="profile()">Profile</span>
+            <i class="fa-solid fa-circle-arrow-down"></i>
+          </div>
+          <div class="toggle">
+            <i class="fa-solid fa-moon toggle-icon"></i>
+            <i class="fa-solid fa-sun toggle-icon"></i>
+            <div class="toggle-ball"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar">
+     <div class="left-menu-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+     <div class="left-menu-icon"><i class="fa-solid fa-house "onclick="home()"></i></div> 
+     <div class="left-menu-icon"> <i class="fa-solid fa-users " onclick="users()" ></i></div>
+      <div class="left-menu-icon"> <i class="fa-solid fa-bookmark" onclick="bookmark()"></i></div>
+      <div class="left-menu-icon"> <i class="fa-solid fa-tv " onclick="watchlater()"></i></div>
+      <div class="left-menu-icon"> <i class="fa-solid fa-hourglass-start " onclick="waitingList()"></i></div>
+      <div class="left-menu-icon"> <i class="fa-solid fa-cart-shopping" onclick="cart()"></i></div>
+      <div class="left-menu-icon"> <i onclick="login()" class="fa-solid fa-right-from-bracket"></i></div>
+    </div>
+    <div class="nonbs-container">
+      <div class="content-nonbs-container">
+        <div
+          class="featured-content"
+          style="
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #151515),
+              url('img/f-1.jpg');
+          "
+        >
+          <img class="featured-title" src="img/f-t-1.png" alt="" />
+          <p class="featured-describe">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis quod
+            alias eligendi a earum qui corrupti dolorum harum ea accusantium.
+            Repellendus ea ex adipisci quibusdam laudantium reprehenderit earum
+            possimus asperiores.
+          </p>
+         <a href="https://asla.egybest.loan/movie/django-unchained-2012/" target="_blank"><button class="featured-button">WATCH</button></a>
+        </div>
+        
+        
+        <!-- first list -->
+        <br><br>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner ">
+            <div class="carousel-item active">
+              <div class="movie-list-item">
+                <img class="movie-list-item-img" src="img/1.jpeg" alt="">
+                <span class="movie-list-item-title">Her</span>
+                <p class="movie-list-item-describe">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit necessitatibus sequi commodi sapiente natus ad autem</p>
+               <a href="https://asla.egybest.loan/movie/her-2013/?ref=search-p1" target="_blank"><button class="movie-list-item-button">Watch</button></a>
+            </div>
+            <div class="movie-list-item">
+              <img class="movie-list-item-img" src="img/2.jpeg" alt="">
+              <span class="movie-list-item-title">Star Wars</span>
+              <p class="movie-list-item-describe">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit necessitatibus sequi commodi sapiente natus ad autem</p>
+             <a href="https://asla.egybest.loan/movie/star-wars-the-rise-of-skywalker-2019/" target="_blank"><button class="movie-list-item-button">Watch</button></a>
+          </div>
+          <div class="movie-list-item">
+            <img class="movie-list-item-img" src="img/3.jpg" alt="">
+            <span class="movie-list-item-title">Fantastic 4</span>
+            <p class="movie-list-item-describe">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit necessitatibus sequi commodi sapiente natus ad autem</p>
+           <a href="https://asla.egybest.loan/movie/fantastic-four-2015/?ref=search-p1" target="_blank"><button class="movie-list-item-button">Watch</button></a>
+        </div>
+        <div class="movie-list-item">
+          <img class="movie-list-item-img" src="img/4.jpg" alt="">
+          <span class="movie-list-item-title">1917</span>
+          <p class="movie-list-item-describe">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit necessitatibus sequi commodi sapiente natus ad autem</p>
+          <a href="https://asla.egybest.loan/movie/1917-2019/" target="_blank"><button class="movie-list-item-button">Watch</button></a>
+      </div>
+            </div>
+            <div class="carousel-item">
+              <div class="movie-list-item">
+                <img class="movie-list-item-img" src="img/5.jpg" alt="">
+                <span class="movie-list-item-title">Avengers</span>
+                <p class="movie-list-item-describe">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit necessitatibus sequi commodi sapiente natus ad autem</p>
+                <a href="https://asla.egybest.loan/movie/the-avengers-2012/?ref=search-p1" target="_blank"><button class="movie-list-item-button">Watch</button></a>
+            </div>
+            <div class="movie-list-item">
+              <img class="movie-list-item-img" src="img/6.jpg" alt="">
+              <span class="movie-list-item-title">Jumanji</span>
+              <p class="movie-list-item-describe">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit necessitatibus sequi commodi sapiente natus ad autem</p>
+              <a href="https://asla.egybest.loan/movie/jumanji-the-next-level-2019/" target="_blank"><button class="movie-list-item-button">Watch</button></a>
+          </div>
+          <div class="movie-list-item">
+              <img class="movie-list-item-img" src="img/7.jpg" alt="">
+              <span class="movie-list-item-title">The Polar Express</span>
+              <p class="movie-list-item-describe">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit necessitatibus sequi commodi sapiente natus ad autem</p>
+              <a href="https://asla.egybest.loan/movie/the-polar-express-2004/" target="_blank"><button class="movie-list-item-button">Watch</button>
+          </div>
+            </div>
+            
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <!-- second list -->
+        <div class="movie-list-container">
+            <h1 class="movie-list-title">FEATURED</h1>
+            <div class="movie-list-wrapper">
+                <div class="movie-list">
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="img/8.jpg" alt="">
+                        <span class="movie-list-item-title">Oblivion</span>
+                        <p class="movie-list-item-describe">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit necessitatibus sequi commodi sapiente natus ad autem</p>
+                       <a href="https://asla.egybest.loan/movie/oblivion-2013/" target="_blank"><button class="movie-list-item-button">Watch</button></a>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="img/9.jpg" alt="">
+                        <span class="movie-list-item-title">Hobbit</span>
+                        <p class="movie-list-item-describe">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit necessitatibus sequi commodi sapiente natus ad autem</p>
+                        <a href="https://asla.egybest.loan/movie/the-hobbit-the-desolation-of-smaug-2013/?ref=search-p1" target="_blank"><button class="movie-list-item-button">Watch</button></a>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="img/10.jpg" alt="">
+                        <span class="movie-list-item-title">Due Date</span>
+                        <p class="movie-list-item-describe">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit necessitatibus sequi commodi sapiente natus ad autem</p>
+                        <a href="https://asla.egybest.loan/movie/due-date-2010/?ref=search-p1" target="_blank"><button class="movie-list-item-button">Watch</button></a>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="img/11.jpg" alt="">
+                        <span class="movie-list-item-title">Kick-Ass2</span>
+                        <p class="movie-list-item-describe">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit necessitatibus sequi commodi sapiente natus ad autem</p>
+                        <a href="https://asla.egybest.loan/movie/kick-ass-2-2013/?ref=search-p1" target="_blank"><button class="movie-list-item-button">Watch</button></a>
+                    </div>
+                    
+                </div>
+                <i class="fa-solid fa-angle-right arrow"></i>
+            </div>
+        </div>
+        <div
+          class="featured-content"
+          style="
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #151515),
+              url('img/f-2.jpg');
+          "
+        >
+          <img class="featured-title" src="img/f-t-2.png" alt="" />
+          <p class="featured-describe">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis quod
+            alias eligendi a earum qui corrupti dolorum harum ea accusantium.
+            Repellendus ea ex adipisci quibusdam laudantium reprehenderit earum
+            possimus asperiores.
+          </p>
+          <a href="https://asla.egybest.loan/movie/the-dark-knight-2008/?ref=search-p1" target="_blank"><button class="featured-button">WATCH</button></a>
+        </div>
+        <!-- third list -->
+        <div class="movie-list-container">
+            <h1 class="movie-list-title">MOST WATCHED</h1>
+            <div class="movie-list-wrapper">
+                <div class="movie-list">
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="img/15.jpg" alt="">
+                        <span class="movie-list-item-title">LEGO Batman</span>
+                        <p class="movie-list-item-describe">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit necessitatibus sequi commodi sapiente natus ad autem</p>
+                        <a href="https://asla.egybest.loan/movie/the-lego-batman-movie-2017/?ref=search-p1" target="_blank"><button class="movie-list-item-button">Watch</button></a>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="img/16.jpg" alt="">
+                        <span class="movie-list-item-title">London</span>
+                        <p class="movie-list-item-describe">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit necessitatibus sequi commodi sapiente natus ad autem</p>
+                        <a href="https://asla.egybest.loan/movie/london-has-fallen-2016/?ref=search-p1" target="_blank"><button class="movie-list-item-button">Watch</button></a>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="img/17.jpg" alt="">
+                        <span class="movie-list-item-title">Aqua-man</span>
+                        <p class="movie-list-item-describe">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit necessitatibus sequi commodi sapiente natus ad autem</p>
+                        <a href="https://asla.egybest.loan/movie/aquaman-2018/" target="_blank"><button class="movie-list-item-button">Watch</button></a>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="img/18.jpg" alt="">
+                        <span class="movie-list-item-title">Fairy Fail</span>
+                        <p class="movie-list-item-describe">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit necessitatibus sequi commodi sapiente natus ad autem</p>
+                       <a href="https://asla.egybest.loan/movie/fairy-tail-the-movie-dragon-cry-2017/" target="_blank"> <button class="movie-list-item-button">Watch</button></a>
+                    </div>
+                    
+                </div>
+                <i class="fa-solid fa-angle-right arrow"></i>
+            </div>
+        </div>
+        <!-- fourth list -->
+        <div class="movie-list-container">
+            <h1 class="movie-list-title">MOST RATING</h1>
+            <div class="movie-list-wrapper">
+                <div class="movie-list">
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="img/12.jpg" alt="">
+                        <span class="movie-list-item-title">Emoji Movie</span>
+                        <p class="movie-list-item-describe">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit necessitatibus sequi commodi sapiente natus ad autem</p>
+                        <a href="https://asla.egybest.loan/movie/the-emoji-movie-2017/" target="_blank"><button class="movie-list-item-button">Watch</button></a>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="img/13.jpg" alt="">
+                        <span class="movie-list-item-title">1920</span>
+                        <p class="movie-list-item-describe">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit necessitatibus sequi commodi sapiente natus ad autem</p>
+                        <a href="https://asla.egybest.loan/movie/1920-london-2016/" target="_blank"><button class="movie-list-item-button">Watch</button></a>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="img/4.jpg" alt="">
+                        <span class="movie-list-item-title">1917</span>
+                        <p class="movie-list-item-describe">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit necessitatibus sequi commodi sapiente natus ad autem</p>
+                        <a href="https://asla.egybest.loan/movie/1917-2019/" target="_blank"><button class="movie-list-item-button">Watch</button></a>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="img/17.jpg" alt="">
+                        <span class="movie-list-item-title">Aqua-man</span>
+                        <p class="movie-list-item-describe">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit necessitatibus sequi commodi sapiente natus ad autem</p>
+                        <a href="https://asla.egybest.loan/movie/aquaman-2018/" target="_blank"><button class="movie-list-item-button">Watch</button></a>
+                    </div>
+                    
+                </div>
+                <i class="fa-solid fa-angle-right arrow"></i>
+            </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

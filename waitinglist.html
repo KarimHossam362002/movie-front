@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieNight | Error404</title>
+    <link rel="icon" href="img/logo.jpg">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="background-image: url(img/error404.jpg); background-repeat: no-repeat; background-size: cover;">
+    <div class="nonbs-navbar">
+        <div class="nonbs-navbar-container">
+          <div class="nonbs-logo-container"><h1 class="logo">MovieNight</h1></div>
+          <div class="nonbs-menu-container">
+            <ul class="nonbs-menu-list">
+              <li onclick="home()" class="menu-list-item ">Home</li>
+              <li onclick="movies()" class="menu-list-item">Movies</li>
+              <li onclick="series()" class="menu-list-item">Series</li>
+              <li onclick="popular()" class="menu-list-item">Popular</li>
+              <li onclick="trends()" class="menu-list-item">Trends</li>
+            </ul>
+          </div>
+          <div class="profile-container">
+            <img class="profile-picture" src="img/profile.jpg" alt="" />
+            <div class="profile-text-container">
+              <span class="profile-text">Profile</span>
+              <i class="fa-solid fa-circle-arrow-down"></i>
+            </div>
+            <div class="toggle">
+              <i class="fa-solid fa-moon toggle-icon"></i>
+              <i class="fa-solid fa-sun toggle-icon"></i>
+              <div class="toggle-ball"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar">
+        <i  class="left-menu-icon  fa-solid fa-magnifying-glass"></i>
+        <i class="left-menu-icon   fa-solid fa-house" onclick="home()"></i>
+        <i class="left-menu-icon  fa-solid fa-users "  onclick="users()"></i>
+        <i class="left-menu-icon  fa-solid fa-bookmark" onclick="bookmark()"></i>
+        <i class="left-menu-icon  fa-solid fa-tv" onclick="watchlater()"></i>
+        <i class="left-menu-icon  fa-solid fa-hourglass-start" style="color: #4DBF00;" onclick="waitingList()"></i>
+        <i class="left-menu-icon  fa-solid fa-cart-shopping" onclick="cart()"></i>
+        <i onclick="login()" class="left-menu-icon  fa-solid fa-right-from-bracket"></i>
+      </div>
+      <script src="js/main.js"></script>
+</body>
+</html>

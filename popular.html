@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/logo.jpg" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/popular.css" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@300;500;600;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>MovieNight | Popular</title>
+</head>
+<body>
+    <div class="nonbs-navbar">
+        <div class="nonbs-navbar-container">
+          <div class="nonbs-logo-container"><h1 class="logo">MovieNight</h1></div>
+          <div class="nonbs-menu-container">
+            <ul class="nonbs-menu-list">
+              <li onclick="home()" class="menu-list-item ">Home</li>
+              <li onclick="movies()" class="menu-list-item ">Movies</li>
+              <li onclick="series()" class="menu-list-item">Series</li>
+              <li onclick="popular()" class="menu-list-item active">Popular</li>
+              <li onclick="trends()" class="menu-list-item">Trends</li>
+            </ul>
+          </div>
+          <div class="profile-container">
+            <img class="profile-picture" src="img/profile.jpg" alt="" />
+            <div class="profile-text-container">
+              <span class="profile-text" onclick="profile()">Profile</span>
+              <i class="fa-solid fa-circle-arrow-down"></i>
+            </div>
+            <div class="toggle">
+              <i class="fa-solid fa-moon toggle-icon"></i>
+              <i class="fa-solid fa-sun toggle-icon"></i>
+              <div class="toggle-ball"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar">
+         <div class="left-menu-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+         <div class="left-menu-icon"><i class="fa-solid fa-house "onclick="home()"></i></div> 
+         <div class="left-menu-icon"> <i class="fa-solid fa-users " onclick="users()" ></i></div>
+         <div class="left-menu-icon"> <i class="fa-solid fa-bookmark" onclick="bookmark()"></i></div>
+         <div class="left-menu-icon"> <i class="fa-solid fa-tv " onclick="watchlater()"></i></div>
+         <div class="left-menu-icon"> <i class="fa-solid fa-hourglass-start " onclick="waitingList()"></i></div>
+         <div class="left-menu-icon"> <i class="fa-solid fa-cart-shopping" onclick="cart()"></i></div>
+         <div class="left-menu-icon"> <i onclick="login()" class="fa-solid fa-right-from-bracket"></i></div>
+       </div>
+      <div class="nonbs-container">
+        <div class="content-nonbs-container">
+          
+        <div
+          class="featured-content"
+          style="
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #151515),
+              url('img/popular-img/main.jpg');
+          "
+        >
+          <img class="featured-title" src="img/popular-img/main-t.webp" alt="" />
+          <p class="featured-describe">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis quod
+            alias eligendi a earum qui corrupti dolorum harum ea accusantium.
+            Repellendus ea ex adipisci quibusdam laudantium reprehenderit earum
+            possimus asperiores.
+          </p>
+          <!-- <button class="featured-button">WATCH</button> -->
+        </div>
+        
+        <div class="row">
+          <div class="movie-item">
+            <img src="img/popular-img/1.webp" alt="">
+            <button class="btn">Add to Cart</button>
+            <button class="btn2">Watch Later</button>
+          </div>
+          <div class="movie-item">
+            <img src="img/popular-img/2.jpg" alt="">
+            <button class="btn">Add to Cart</button>
+            <button class="btn2">Watch Later</button>
+          </div>
+          <div class="movie-item">
+            <img src="img/popular-img/3.jpg" alt="">
+            <button class="btn">Add to Cart</button>
+            <button class="btn2">Watch Later</button>
+            
+          </div>
+          <div class="movie-item">
+            <img src="img/popular-img/4.jpg" alt="">
+            <button class="btn">Add to Cart</button>
+            <button class="btn2">Watch Later</button>
+          </div>
+        </div>
+        <div
+          class="featured-content"
+          style="
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #151515),
+              url('img/popular-img/main0.jpg');background-repeat: no-repeat; background-size: cover;">
+          <img class="featured-title" src="img/popular-img/main0-t.webp" alt="" />
+          <p class="featured-describe">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis quod
+            alias eligendi a earum qui corrupti dolorum harum ea accusantium.
+            Repellendus ea ex adipisci quibusdam laudantium reprehenderit earum
+            possimus asperiores.
+          </p>
+          <button class="featured-button">WATCH</button>
+        </div>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner ">
+            <div class="carousel-item active">
+              <div class="movie-list-item">
+                <img class="movie-list-item-img" src="img/popular-img/5.jpg" alt="">
+                <span class="movie-list-item-title">SAO</span>
+                <p class="movie-list-item-describe">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit necessitatibus sequi commodi sapiente natus ad autem</p>
+                <button class="movie-list-item-button">Watch</button>
+            </div>
+            <div class="movie-list-item">
+              <img class="movie-list-item-img" src="img/popular-img/6.jpg" alt="">
+              <span class="movie-list-item-title">Star Wars</span>
+              <p class="movie-list-item-describe">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit necessitatibus sequi commodi sapiente natus ad autem</p>
+              <button class="movie-list-item-button">Watch</button>
+          </div>
+          <div class="movie-list-item">
+            <img class="movie-list-item-img" src="img/popular-img/7.jpg" alt="">
+            <span class="movie-list-item-title">Storm</span>
+            <p class="movie-list-item-describe">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit necessitatibus sequi commodi sapiente natus ad autem</p>
+            <button class="movie-list-item-button">Watch</button>
+        </div>
+        <div class="movie-list-item">
+          <img class="movie-list-item-img" src="img/popular-img/8.jpg" alt="">
+          <span class="movie-list-item-title">1917</span>
+          <p class="movie-list-item-describe">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit necessitatibus sequi commodi sapiente natus ad autem</p>
+          <button class="movie-list-item-button">Watch</button>
+      </div>
+            </div>
+            <div class="carousel-item">
+              <div class="movie-list-item">
+                <img class="movie-list-item-img" src="img/5.jpg" alt="">
+                <span class="movie-list-item-title">Avengers</span>
+                <p class="movie-list-item-describe">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit necessitatibus sequi commodi sapiente natus ad autem</p>
+                <button class="movie-list-item-button">Watch</button>
+            </div>
+            <div class="movie-list-item">
+              <img class="movie-list-item-img" src="img/6.jpg" alt="">
+              <span class="movie-list-item-title">Jumanji</span>
+              <p class="movie-list-item-describe">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit necessitatibus sequi commodi sapiente natus ad autem</p>
+              <button class="movie-list-item-button">Watch</button>
+          </div>
+          <div class="movie-list-item">
+              <img class="movie-list-item-img" src="img/7.jpg" alt="">
+              <span class="movie-list-item-title">Skyfall</span>
+              <p class="movie-list-item-describe">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit necessitatibus sequi commodi sapiente natus ad autem</p>
+              <button class="movie-list-item-button">Watch</button>
+          </div>
+            </div>
+            
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        </div>
+    </div>
+    <script src="js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
